@@ -1,0 +1,45 @@
+# VERİ TİPLERİ:
+
+#   int: Tam sayılardır: 15,45,688123,-45
+a = 55
+
+#   float: Ondalıklı dediğimiz sayılar için kullanılır:
+a = 3.14
+
+#   str: Metinsel veri tipi için kullanılır.
+a = "Bu bir metindir ve string veri tipi ile oluşturulmuştur."
+
+#   bool: Matıksal veri tipidir. True veya False döndürülür.
+a = True
+
+#   list: Verileri bir çatı altında depolayabilmemizi sağlar
+a = [15, "a", True]
+print(a)
+#   tuple: Sabit çatılardır. Üzerlerinde ekleme, çıkarma işemi yapılamaz.
+a = (15, "a", True)
+print(a)
+#   set: List'e çok benzer. Demet olarak de geçebilir
+a = {15, "a", True}
+#   dict: Kütüphane olarak key ve value lardan oluşur ve her şeyi barındırabilir
+a = {
+    "isim": "Enes",
+    "yas": 18
+}
+
+# 2. En çok string veri tipindeki veriler kullanılıyor. İlerleyiş barı için sayının int değer aldığını ancak yanındaki
+# yazıların string olduğunu söyleyebiliriz.
+
+
+# 3. Şart bloklarının kullanıldığı durumlar, giriş ekranı olarak sayabiliriz. Kullanıcı ve şifrenin sorgulanması.
+
+db_kullanici_adi = "kullaniciadi123"
+db_sifre = "123456"
+
+in_kullanici_adi = input("Kullanici adi: ")
+in_sifre = input("Sifre: ")
+
+if in_kullanici_adi == db_kullanici_adi and in_sifre == db_sifre:
+    print("Giriş başarılı")
+else:
+    print("Parola veya şifre yanlış.")
+
